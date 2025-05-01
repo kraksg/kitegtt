@@ -1,0 +1,2 @@
+tradingsymbol,trigger_price,cmp_price,qty,reason
+TITAN,3652.0,3375.2,1,"Net change -0.71% not in range [-3.12%, 3.12%]"

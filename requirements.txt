@@ -1,0 +1,10 @@
+flask
+pandas
+kiteconnect
+schedule
+configparser
+webbrowser
+threading
+time
+request
+os
