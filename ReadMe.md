@@ -33,7 +33,7 @@ cd gtt-bot
 pip install -r requirements.txt
 ```
 
-### 3. Create your `kiteconfig.ini`
+### 3. Edit  `kiteconfig.ini` with your apikey,secret and googlesheet
 ```ini
 [kite]
 api_key = your_api_key
