@@ -4,7 +4,7 @@ This Python-based automation tool places GTT (Good Till Triggered) BUY orders fo
 
 ## 🔧 Features
 - Reads a Google Sheet for GTT inputs (stock symbol, trigger price, etc.)
-- Deletes old BUY GTTs before placing new ones
+- Deletes old BUY GTTs before placing new ones(!!Deletes all existing buy GTT's, backup old gtt's or include them in the google sheet to avoid loss od data!!)
 - Avoids new stocks if configured
 - Applies configurable logic for upward averaging and holding value limits
 - Generates and stores access token from Zerodha
@@ -61,7 +61,7 @@ max_holding_value = 50000
 
 ### 4. First Time Run (Generates access token)
 ```bash
-python main.py
+python kitegtt.py
 ```
 It will:
 - Open Zerodha login page in your browser
@@ -79,7 +79,7 @@ You can schedule this script using **Windows Task Scheduler** to run every NSE w
 3. Set trigger: Daily at 8:00 AM
 4. Action: Start a program
 5. Program/script: `python`
-6. Add arguments: `main.py`
+6. Add arguments: `kitegtt.py`
 7. Start in: `C:\path\to\gtt-bot`
 
 ---
@@ -102,13 +102,14 @@ If any stocks are skipped due to config logic, they will be logged in a file nam
 To run this for another user:
 1. Clone the repo
 2. Create a new `kiteconfig.ini` with that user's API key, secret, and sheet
-3. Run `python main.py` once to authorize
+3. Run `python kitegtt.py` once to authorize
 4. Schedule as per above
 
 ---
 
 ## 📬 Contact
 Feel free to reach out via GitHub issues for enhancements or questions.
+The code is free to use and me made every effort to document and people utilize it. Technical support can be extended for 210 INR, payable after successful run. This is supported by college interns and the amount goes to them.
 
 ---
 
